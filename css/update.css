@@ -1,0 +1,487 @@
+body {
+    font-family: Poppins;
+    padding: 2rem;
+  }
+  
+  .hr-line {
+    border-top: 1px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+      linear-gradient(90deg, White, DimGrey, White) border-box;
+  }
+  
+  /* WebAwesome Timeline Thin style */
+  
+  .wa-timeline {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  wa-details {
+    --border-width: 0;
+    --border-radius: 0;
+    padding-bottom: 20px;
+    border-left: 1.5px solid DimGrey;
+    padding-left: 25px;
+  }
+  
+  wa-details[open]::part(content) {
+    font-weight: 300;
+  }
+  
+  wa-details::part(header) {
+    font-weight: bold;
+  }
+  
+  wa-details::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 22px;
+    height: 22px;
+    border: 3px solid White;
+    outline: 1px solid DimGrey;
+    top: 37px;
+    right: 37px;
+    color: Black;
+    background-color: DimGrey;
+    border-radius: 50%;
+    transition: all 0.25s ease;
+  }
+  
+  details {
+    padding-bottom: 20px;
+  }
+  
+  /* Item 1 */
+  
+  #details-1[open]::before {
+    background-color: DodgerBlue;
+    outline-color: DodgerBlue;
+  }
+  
+  #details-1[open]::part(base) {
+    border-width: 0px;
+  }
+  
+  #details-1[open]::part(summary) {
+    color: Dodgerblue;
+  }
+  
+  #details-1[open]::part(summary-icon) {
+    color: Dodgerblue;
+  }
+  
+  #details-1::part(header) {
+    border: 1px solid DimGrey;
+  }
+  
+  #details-1[open]::part(header) {
+    border: 1px solid Dodgerblue;
+  }
+  
+  /* Item 2 */
+  
+  #details-2[open]::before {
+    background-color: Orange;
+    outline-color: Orange;
+  }
+  
+  #details-2[open]::part(base) {
+    border-width: 0px;
+  }
+  
+  #details-2[open]::part(summary) {
+    color: Orange;
+  }
+  
+  #details-2[open]::part(summary-icon) {
+    color: Orange;
+  }
+  
+  #details-2::part(header) {
+    border: 1px solid DimGrey;
+  }
+  
+  #details-2[open]::part(header) {
+    border: 1px solid Orange;
+  }
+  
+  /* Item 3 */
+  
+  #details-3[open]::before {
+    background-color: HotPink;
+    outline-color: HotPink;
+  }
+  
+  #details-3[open]::part(base) {
+    border-width: 0px;
+  }
+  
+  #details-3[open]::part(summary) {
+    color: HotPink;
+  }
+  
+  #details-3[open]::part(summary-icon) {
+    color: HotPink;
+  }
+  
+  #details-3::part(header) {
+    border: 1px solid DimGrey;
+  }
+  
+  #details-3[open]::part(header) {
+    border: 1px solid HotPink;
+  }
+  
+  /* Prevents sticky hover on portable devices */
+  
+  @media (hover: hover) {
+    #details-1:hover {
+      &#details-1::before {
+        background-color: DodgerBlue;
+        outline-color: DodgerBlue;
+      }
+    }
+    #details-2:hover {
+      &#details-2::before {
+        background-color: Orange;
+        outline-color: Orange;
+      }
+    }
+    #details-3:hover {
+      &#details-3::before {
+        background-color: HotPink;
+        outline-color: HotPink;
+      }
+    }
+  }
+  
+  /* WebAwesome Timeline Solid Style */
+  
+  /* Item 1 */
+  
+  #details-4[open]::before {
+    background-color: DodgerBlue;
+    outline-color: DodgerBlue;
+  }
+  
+  #details-4[open]::part(base) {
+    border-width: 0px;
+  }
+  
+  #details-4[open]::part(summary) {
+    color: White;
+  }
+  
+  #details-4[open]::part(summary-icon) {
+    color: White;
+  }
+  
+  #details-4::part(header) {
+    border: none;
+    background-color: #eaeaea;
+  }
+  
+  #details-4[open]::part(header) {
+    background-color: DodgerBlue;
+  }
+  
+  /* Item 2 */
+  
+  #details-5[open]::before {
+    background-color: Orange;
+    outline-color: Orange;
+  }
+  
+  #details-5[open]::part(base) {
+    border-width: 0px;
+  }
+  
+  #details-5[open]::part(summary) {
+    color: White;
+  }
+  
+  #details-5[open]::part(summary-icon) {
+    color: White;
+  }
+  
+  #details-5::part(header) {
+    border: none;
+    background-color: #eaeaea;
+  }
+  
+  #details-5[open]::part(header) {
+    background-color: Orange;
+  }
+  
+  /* Item 3 */
+  
+  #details-6[open]::before {
+    background-color: HotPink;
+    outline-color: HotPink;
+  }
+  
+  #details-6[open]::part(base) {
+    border-width: 0px;
+  }
+  
+  #details-6[open]::part(summary) {
+    color: White;
+  }
+  
+  #details-6[open]::part(summary-icon) {
+    color: White;
+  }
+  
+  #details-6::part(header) {
+    border: none;
+    background-color: #eaeaea;
+  }
+  
+  #details-6[open]::part(header) {
+    background-color: HotPink;
+  }
+  
+  /* Prevents sticky hover on portable devices */
+  
+  @media (hover: hover) {
+    #details-4:hover {
+      &#details-4::before {
+        background-color: DodgerBlue;
+        outline-color: DodgerBlue;
+      }
+    }
+    #details-5:hover {
+      &#details-5::before {
+        background-color: Orange;
+        outline-color: Orange;
+      }
+    }
+    #details-6:hover {
+      &#details-6::before {
+        background-color: HotPink;
+        outline-color: HotPink;
+      }
+    }
+  }
+  
+  /* Style option buttons */
+  
+  .option-1 {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border: 1px solid DimGrey;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    transition: all 0.2s;
+    &:hover {
+      border: 1px solid DodgerBlue;
+    }
+  }
+  
+  .option-2 {
+    height: 20px;
+    width: 20px;
+    background-color: Gainsboro;
+    border: 0px solid White;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    transition: all 0.2s;
+    &:hover {
+      box-shadow: 2px 2px 4px #969a9c inset;
+    }
+  }
+  
+  /* Bootstrap Timeline CSS */
+  
+  .accordion {
+    --bs-accordion-border-width: 0;
+    --bs-accordion-border-radius: 0;
+  }
+  
+  .bs-timeline {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .accordion-item {
+    border-radius: 0;
+    border-left: 1.5px solid DimGrey;
+    padding-left: 25px;
+    padding-bottom: 20px;
+  }
+  
+  .accordion-button::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 22px;
+    height: 22px;
+    border: 3px solid White;
+    outline: 1px solid DimGrey;
+    right: 58px;
+    background-color: DimGrey;
+    border-radius: 50%;
+    transition: all 0.25s ease;
+  }
+  
+  /* Bootstrap Timeline Thin Style */
+  
+  /* Item 1 */
+  
+  #tl-btn-1:not(.collapsed) {
+    color: DodgerBlue;
+    background-color: White !important;
+    border: 1px solid DodgerBlue;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    &::before {
+      background-color: DodgerBlue;
+      outline-color: DodgerBlue;
+    }
+    &::after {
+      filter: invert(48%) sepia(32%) saturate(5795%) hue-rotate(192deg)
+        brightness(101%) contrast(102%);
+    }
+  }
+  
+  /* Item 2 */
+  
+  #tl-btn-2:not(.collapsed) {
+    color: Orange;
+    background-color: White !important;
+    border: 1px solid Orange;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    &::before {
+      background-color: Orange;
+      outline-color: Orange;
+    }
+    &::after {
+      filter: invert(55%) sepia(61%) saturate(2557%) hue-rotate(2deg)
+        brightness(105%) contrast(106%);
+    }
+  }
+  
+  /* Item 3 */
+  
+  #tl-btn-3:not(.collapsed) {
+    color: HotPink;
+    background-color: White !important;
+    border: 1px solid HotPink;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    &::before {
+      background-color: HotPink;
+      outline-color: HotPink;
+    }
+    &::after {
+      filter: invert(64%) sepia(35%) saturate(3888%) hue-rotate(296deg)
+        brightness(102%) contrast(101%);
+    }
+  }
+  
+  #tl-btn-1.collapsed,
+  #tl-btn-2.collapsed,
+  #tl-btn-3.collapsed {
+    border: 1px solid DimGrey;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+  
+  /* Bootstrap Timeline Solid Style */
+  
+  #tl-btn-4:not(.collapsed) {
+    color: White;
+    background-color: DodgerBlue;
+    border: none;
+    border-radius: 0;
+    &::before {
+      background-color: DodgerBlue;
+      outline-color: DodgerBlue;
+    }
+    &::after {
+      filter: invert(100%) brightness(200%);
+    }
+  }
+  
+  /* Item 2 */
+  
+  #tl-btn-5:not(.collapsed) {
+    color: White;
+    background-color: Orange;
+    border: none;
+    border-radius: 0;
+    &::before {
+      background-color: Orange;
+      outline-color: Orange;
+    }
+    &::after {
+      filter: invert(100%) brightness(200%);
+    }
+  }
+  
+  /* Item 3 */
+  
+  #tl-btn-6:not(.collapsed) {
+    color: White;
+    background-color: HotPink;
+    border: none;
+    border-radius: 0;
+    &::before {
+      background-color: HotPink;
+      outline-color: HotPink;
+    }
+    &::after {
+      filter: invert(100%) brightness(200%);
+    }
+  }
+  
+  #tl-btn-4.collapsed,
+  #tl-btn-5.collapsed,
+  #tl-btn-6.collapsed {
+    border: none;
+    border-radius: 0;
+    background-color: #eaeaea;
+  }
+  
+  /* Prevents sticky hover on portable devices */
+  
+  @media (hover: hover) {
+    #tl-btn-1:hover::before {
+      background-color: Dodgerblue;
+      outline-color: Dodgerblue;
+    }
+    #tl-btn-2:hover::before {
+      background-color: Orange;
+      outline-color: Orange;
+    }
+    #tl-btn-3:hover::before {
+      background-color: HotPink;
+      outline-color: Hotpink;
+    }
+    #tl-btn-4:hover::before {
+      background-color: Dodgerblue;
+      outline-color: Dodgerblue;
+    }
+    #tl-btn-5:hover::before {
+      background-color: Orange;
+      outline-color: Orange;
+    }
+    #tl-btn-6:hover::before {
+      background-color: HotPink;
+      outline-color: Hotpink;
+    }
+  }
+  
